@@ -306,45 +306,12 @@
 </header>
 
 <div class="tarja">
-  <h2>⚠ Rascunho — não publicar ainda</h2>
+  <h2>⚠ Rascunho em revisão</h2>
   <p>
-    Esta página <strong>não pode ir ao ar</strong> como está. Faltam duas
-    coisas, nesta ordem:
+    Falta a <strong>revisão por advogado</strong>: o texto foi escrito por
+    desenvolvedor. A assinatura descrita na seção 7 ainda está sendo
+    implementada no aplicativo.
   </p>
-  <ul>
-    <li><strong>Preencher a identificação do controlador</strong> — os campos
-      marcados em vermelho na <a href="#controlador">seção 1</a>. Publicar uma
-      política de privacidade com nome, documento, endereço ou e-mail
-      inventados é pior do que não ter política nenhuma: é documento falso, e
-      o canal de contato é justamente o que a LGPD exige que funcione (art.
-      18, §1º, e art. 9º, III e IV).</li>
-    <li><strong>Revisão por advogado</strong> — o texto foi escrito por
-      desenvolvedor, não por profissional habilitado. A revisão jurídica ainda
-      não aconteceu.</li>
-  </ul>
-  <p>
-    Enquanto os campos estiverem por preencher, a página serve só para leitura
-    interna e para a conversa com o advogado.
-  </p>
-  <p><strong>Pontos em aberto para revisão (09/11/2026):</strong></p>
-  <ul>
-    <li><strong>Assinatura pela Google Play</strong> (R$ 9,90/mês ou
-      R$ 69,90/ano, decidida em 09/11). Ela torna desatualizadas as frases
-      “não possui integração com qualquer serviço externo” (seção 7), “não
-      utilizamos […] serviços de terceiros” e possivelmente “sem permissão de
-      acesso à internet” (seção 5). Falta uma seção sobre pagamento: quem trata
-      os dados da compra é a Google, e o app só recebe se a assinatura está
-      ativa. Os registros do ciclo continuam sem sair do aparelho.</li>
-    <li><strong>Quem é o controlador.</strong> A conta na Play será
-      <strong>pessoal</strong>, mas a seção 1 diz que o controlador é pessoa
-      jurídica (decisão de 05/09). Ou o controlador passa a ser a pessoa física
-      dona da conta, ou a ficha da loja e a política mostram nomes
-      diferentes.</li>
-    <li><strong>Seção 2d repete um item:</strong> “Se o aplicativo pede a sua
-      digital ao abrir” e “Se a trava por digital ao abrir o app está ligada”
-      são a mesma configuração. Está assim no texto do app, e esta página o
-      reproduz literalmente.</li>
-  </ul>
 </div>
 
 <nav class="sumario" aria-label="Sumário">
@@ -364,12 +331,11 @@
 </nav>
 
 <p class="sob-titulo">
-  <strong>Última atualização: agosto de 2026 | Versão 2.0</strong><br>
+  <strong>Última atualização: novembro de 2026 | Versão 3.0</strong><br>
   Conjunto de documentos legais aceito no aplicativo:
-  <code>2026.08-v6</code> — é este código, e não o número da versão do app,
+  <code>2026.11-v7</code> — é este código, e não o número da versão do app,
   que identifica o texto que a usuária aceitou.<br>
-  Texto extraído do FertiCheck <strong>3.5.2+32</strong> (Android).
-  <span class="preencher">[versão publicada na loja — conferir antes de publicar]</span>
+  Texto da versão do FertiCheck com assinatura (posterior à 3.5.2+32).
 </p>
 
 <!-- ─────────────────────────────────────────────────────────
@@ -388,42 +354,13 @@
   (Lei nº 13.709/2018).
 </p>
 <p>
-  O controlador dos dados pessoais é o desenvolvedor identificado no perfil da
-  Play Store. Contato: consulte a seção “Sobre” nas configurações do
-  aplicativo.
+  O controlador dos dados pessoais é Aumaristech, desenvolvedor do
+  aplicativo, identificado no perfil da Play Store. Contato:
+  <a href="mailto:aumaristech@gmail.com">aumaristech@gmail.com</a> (também em
+  Ajustes &gt; Contato do Controlador).
 </p>
 
-<div class="acrescimo" id="controlador">
-  <span class="rotulo">A preencher antes de publicar — não faz parte do texto do aplicativo</span>
-  <p>
-    Identificação do controlador, exigida pelo art. 9º, III e IV da LGPD. Enquanto o
-    aplicativo não estiver publicado, não existe “perfil da Play Store” para
-    onde a frase acima aponta — por isso a identificação tem de vir aqui,
-    escrita por extenso:
-  </p>
-  <dl class="campos">
-    <dt>Razão social</dt>
-    <dd><span class="preencher">[RAZÃO SOCIAL — a preencher]</span></dd>
-
-    <dt>CNPJ</dt>
-    <dd><span class="preencher">[CNPJ — a preencher]</span></dd>
-
-    <dt>Endereço (sede)</dt>
-    <dd><span class="preencher">[endereço — a preencher]</span></dd>
-
-    <dt>E-mail de contato (encarregado / titular dos dados)</dt>
-    <dd><span class="preencher">[e-mail de contato — a preencher]</span></dd>
-  </dl>
-  <p>
-    O controlador é <strong>pessoa jurídica</strong> — decisão de 05/09/2026.
-    Por isso os campos pedem razão social e CNPJ, e não nome e CPF: razão
-    social, CNPJ e endereço de sede já são dado público no cadastro da Receita
-    Federal, de modo que publicá-los aqui não expõe nada que não fosse
-    consultável. Depois de preenchidos, o mesmo dado precisa aparecer no
-    aplicativo (Ajustes › “Contato do Controlador”) e no perfil da loja, para
-    os três não se contradizerem.
-  </p>
-</div>
+<span id="controlador"></span>
 
 <h2 id="s2">2. Dados coletados</h2>
 
@@ -462,7 +399,6 @@
 <h3>d) Configurações que você escolhe</h3>
 <ul>
   <li>Horário do lembrete diário, se você ligar o lembrete</li>
-  <li>Se o aplicativo pede a sua digital ao abrir</li>
   <li>Se a trava por digital ao abrir o app está ligada</li>
 </ul>
 <p>
@@ -494,8 +430,9 @@
   para produzir avaliação, classificação ou previsão de qualquer natureza.
 </p>
 <p>
-  Nenhum dado é utilizado para fins comerciais, de marketing, pesquisa ou
-  analytics.
+  Nenhum dado registrado por você é utilizado para fins comerciais, de
+  marketing, pesquisa ou analytics. A assinatura (<a href="#s7">seção 7</a>)
+  não dá a ninguém acesso aos seus registros.
 </p>
 
 <h2 id="s5">5. Armazenamento, segurança e retenção</h2>
@@ -511,8 +448,12 @@
   <li>O FertiCheck NÃO envia dados para servidores externos. O aplicativo não
     possui servidor, conta de usuária, login nem sincronização em nuvem.</li>
   <li>O FertiCheck NÃO tem acesso remoto aos dados armazenados.</li>
+  <li>A assinatura é conferida pelo aplicativo Play Store do próprio aparelho,
+    que é quem se comunica com o Google. O FertiCheck em si continua sem acesso
+    à internet.</li>
   <li>Não utilizamos analytics, rastreamento, publicidade nem serviços de
-    terceiros. As fontes tipográficas são embutidas no aplicativo, sem download
+    terceiros, com uma única exceção: a cobrança da assinatura pelo Google Play
+    (<a href="#s7">seção 7</a>). As fontes tipográficas são embutidas no aplicativo, sem download
     em tempo de execução.</li>
   <li>Os dados são mantidos até que você os exclua. Não há exclusão automática.
     Desinstalar o aplicativo remove o banco e a chave.</li>
@@ -592,9 +533,32 @@
 <h2 id="s7">7. Compartilhamento e transferência</h2>
 
 <p>
-  O FertiCheck NÃO compartilha nenhum dado com terceiros e não possui
-  integração com qualquer serviço externo.
+  O FertiCheck NÃO compartilha com terceiros nenhum dado que você registra.
 </p>
+
+<h3 id="assinatura">Assinatura e pagamento — o único serviço de terceiros</h3>
+<p>
+  O FertiCheck é oferecido por assinatura (mensal ou anual), contratada e paga
+  exclusivamente pelo sistema oficial de cobrança do Google Play (Google Play
+  Billing). É a ÚNICA integração do aplicativo com um serviço externo.
+</p>
+<ul>
+  <li>Quem trata os dados do pagamento (conta Google, forma de pagamento,
+    histórico de compras) é o Google, conforme a
+    <a href="https://policies.google.com/privacy?hl=pt-BR">política de privacidade do próprio Google</a>.
+    O FertiCheck não vê nem guarda o número do seu cartão ou outro meio de
+    pagamento.</li>
+  <li>O aplicativo pergunta ao Google Play, no próprio aparelho, apenas se há
+    uma assinatura ativa. Recebe de volta só essa resposta e os dados da compra
+    (produto, data e situação), necessários para liberar o uso.</li>
+  <li>NENHUM registro do seu ciclo, nota ou dado de saúde é enviado ao Google
+    ou a qualquer outra pessoa por causa da assinatura.</li>
+  <li>Assinar, cancelar e pedir reembolso são feitos no Google Play (Play Store
+    &gt; Pagamentos e assinaturas). Se a assinatura acabar, você continua
+    podendo ver, exportar e eliminar tudo o que registrou.</li>
+  <li>Base legal: execução de contrato do qual você é parte (LGPD, Art. 7º,
+    V).</li>
+</ul>
 <p>
   As funções de exportação — cópia/arquivo JSON e o gráfico do ciclo em PDF
   para a instrutora — são iniciadas EXCLUSIVAMENTE pela usuária, enviam apenas
@@ -630,20 +594,10 @@
 
 <p>
   Esta política pode ser atualizada. Alterações relevantes serão comunicadas
-  por atualização do aplicativo. O desenvolvedor pode ser contactado pelo
-  perfil na Play Store.
+  por atualização do aplicativo. Contato com o controlador:
+  <a href="mailto:aumaristech@gmail.com">aumaristech@gmail.com</a>.
 </p>
 
-<div class="acrescimo">
-  <span class="rotulo">A preencher antes de publicar — não faz parte do texto do aplicativo</span>
-  <p>
-    Canal de contato por escrito, para quem não usa a loja:
-    <span class="preencher">[e-mail de contato — a preencher]</span>.
-    Esta página fica publicada em
-    <span class="preencher">[URL pública — a preencher]</span>, endereço que
-    precisa ser o mesmo informado no formulário da loja e no aplicativo.
-  </p>
-</div>
 
 <div class="fecho">
   <p>
@@ -658,7 +612,7 @@
     O texto das seções 1 a 10 é reprodução literal de
     <code>LegalTexts.privacyPolicy</code>
     (<code>lib/core/constants/legal_texts.dart</code>), conjunto
-    <code>2026.08-v6</code> — a mesma política que a usuária lê e aceita dentro
+    <code>2026.11-v7</code> — a mesma política que a usuária lê e aceita dentro
     do FertiCheck. Ao alterar aquele texto, atualize esta página na mesma
     sessão e bumpe <code>LegalTexts.documentsVersion</code>: uma página pública
     que não bate com o que o app mostra é pior que nenhuma.
