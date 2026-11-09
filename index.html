@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E">
+<title>FertiCheck — Política de Privacidade (rascunho)</title>
+<style>
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('fontes/Fraunces-Regular.ttf') format('truetype');
+    font-weight: 400; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('fontes/Fraunces-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('fontes/Inter-Regular.ttf') format('truetype');
+    font-weight: 400; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('fontes/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600; font-display: swap;
+  }
+
+  :root {
+    --fundo: #faf7f2;
+    --cartao: #ffffff;
+    --linha: #e6dfe9;
+    --linha-forte: #cfc3d6;
+    --texto: #1c1628;
+    --texto-2: #4a4356;
+    --texto-3: #6b6478;
+    --lavanda: #7d4f9e;
+    --lavanda-clara: #f1e9f7;
+    --atencao: #b1595c;
+    --atencao-clara: #fbeeee;
+    --media: #8a6420;
+    --media-clara: #fbf2e2;
+    --certo: #3d7a5c;
+    --certa-clara: #e7f2ec;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #1a1620;
+      --cartao: #251f2e;
+      --linha: #3a3145;
+      --linha-forte: #4d4259;
+      --texto: #f0eaf8;
+      --texto-2: #d6cde0;
+      --texto-3: #b0a5be;
+      --lavanda: #c9a5e0;
+      --lavanda-clara: #2f2840;
+      --atencao: #e79a9c;
+      --atencao-clara: #37232a;
+      --media: #e3bd77;
+      --media-clara: #352c1f;
+      --certo: #8fc9a9;
+      --certa-clara: #1f3229;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.68;
+    -webkit-text-size-adjust: 100%;
+  }
+  .pagina { max-width: 44rem; margin: 0 auto; padding: 0 1.15rem 6rem; }
+
+  /* ── Capa ───────────────────────────────────────────── */
+  .capa { padding: 2.6rem 0 0; }
+  .selo {
+    font-size: .78rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--lavanda);
+    font-weight: 600;
+    margin: 0 0 .7rem;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2rem, 7vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    margin: 0 0 .8rem;
+    text-wrap: balance;
+  }
+  .linha-fina {
+    font-size: 1.12rem;
+    color: var(--texto-2);
+    margin: 0 0 1.6rem;
+    text-wrap: pretty;
+  }
+
+  /* ── Tarja de rascunho ──────────────────────────────── */
+  .tarja {
+    background: var(--atencao-clara);
+    border: 2px solid var(--atencao);
+    border-radius: 14px;
+    padding: 1.2rem 1.3rem;
+    margin: 0 0 2rem;
+  }
+  .tarja h2 {
+    font-family: var(--sans);
+    font-size: 1.06rem;
+    font-weight: 600;
+    color: var(--atencao);
+    margin: 0 0 .5rem;
+    border: 0;
+    padding: 0;
+  }
+  .tarja p:last-child, .tarja ul:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin: 2.8rem 0 .9rem;
+    padding-top: 1.5rem;
+    border-top: 1.5px solid var(--linha-forte);
+    text-wrap: balance;
+    scroll-margin-top: 1rem;
+  }
+  h2.sem-linha { border-top: 0; padding-top: 0; }
+  h3 {
+    font-family: var(--sans);
+    font-size: 1.06rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 1.4rem 0 .5rem;
+    text-wrap: balance;
+  }
+  p { margin: 0 0 1rem; }
+  strong { font-weight: 600; }
+  .sob-titulo { color: var(--texto-3); margin: -.4rem 0 1.4rem; font-size: .95rem; }
+
+  ul { padding-left: 1.2rem; margin: 0 0 1.1rem; }
+  li { margin-bottom: .45rem; }
+  li::marker { color: var(--lavanda); }
+  ul ul { margin-top: .45rem; margin-bottom: .2rem; }
+
+  ol.direitos { padding-left: 0; list-style: none; counter-reset: d; }
+  ol.direitos li {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    gap: .6rem;
+    margin-bottom: .7rem;
+  }
+  ol.direitos li .rom {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--lavanda);
+    text-align: right;
+  }
+
+  /* ── Sumário ────────────────────────────────────────── */
+  nav.sumario {
+    background: var(--cartao);
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+    padding: 1.1rem 1.3rem;
+    margin: 0 0 2rem;
+  }
+  nav.sumario p {
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--texto-3);
+    margin: 0 0 .6rem;
+  }
+  nav.sumario ol {
+    margin: 0; padding-left: 1.3rem;
+    columns: 2; column-gap: 1.6rem;
+    font-size: .95rem;
+  }
+  nav.sumario li { margin-bottom: .3rem; break-inside: avoid; }
+  a { color: var(--lavanda); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  a:focus-visible { outline: 2px solid var(--lavanda); outline-offset: 3px; border-radius: 4px; }
+
+  /* ── Blocos que NÃO são texto da política ───────────── */
+  .acrescimo {
+    background: var(--media-clara);
+    border-left: 3px solid var(--media);
+    border-radius: 0 12px 12px 0;
+    padding: 1rem 1.2rem;
+    margin: 0 0 1.4rem;
+  }
+  .acrescimo .rotulo {
+    display: block;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--media);
+    margin-bottom: .4rem;
+  }
+  .acrescimo p:last-child, .acrescimo dl:last-child { margin-bottom: 0; }
+
+  .guia {
+    background: var(--certa-clara);
+    border-left: 3px solid var(--certo);
+    border-radius: 0 12px 12px 0;
+    padding: 1rem 1.2rem;
+    margin: 0 0 1.4rem;
+  }
+  .guia .rotulo {
+    display: block;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--certo);
+    margin-bottom: .4rem;
+  }
+  .guia ul:last-child, .guia p:last-child { margin-bottom: 0; }
+
+  /* ── Campos a preencher ─────────────────────────────── */
+  dl.campos { margin: 0 0 .8rem; }
+  dl.campos dt {
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--texto-3);
+    margin-top: .8rem;
+  }
+  dl.campos dt:first-child { margin-top: 0; }
+  dl.campos dd { margin: .1rem 0 0; }
+  .preencher {
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .86em;
+    color: var(--atencao);
+    background: var(--atencao-clara);
+    border: 1px dashed var(--atencao);
+    border-radius: 6px;
+    padding: .12em .5em;
+  }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .84em;
+    background: var(--lavanda-clara);
+    padding: .1em .35em;
+    border-radius: 4px;
+  }
+
+  .fecho {
+    background: var(--cartao);
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+    padding: 1.1rem 1.3rem;
+    margin: 2rem 0 0;
+    text-align: center;
+    color: var(--texto-2);
+  }
+  .fecho p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--linha);
+    font-size: .86rem;
+    color: var(--texto-3);
+  }
+  footer p { margin: 0 0 .6rem; }
+
+  @media (max-width: 30rem) {
+    nav.sumario ol { columns: 1; }
+  }
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    nav.sumario { display: none; }
+    .tarja, .acrescimo, .guia, .fecho { break-inside: avoid; border-color: #999; }
+    h2 { break-after: avoid; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<header class="capa">
+  <p class="selo">FertiCheck · Política de Privacidade · rascunho para publicação</p>
+  <h1>Política de Privacidade</h1>
+  <p class="linha-fina">
+    Esta página reproduz, palavra por palavra, a Política de Privacidade que a
+    usuária lê e aceita dentro do aplicativo. Ela existe para ficar disponível
+    numa URL pública — exigência das lojas de aplicativos e do art. 9º da LGPD.
+  </p>
+</header>
+
+<div class="tarja">
+  <h2>⚠ Rascunho — não publicar ainda</h2>
+  <p>
+    Esta página <strong>não pode ir ao ar</strong> como está. Faltam duas
+    coisas, nesta ordem:
+  </p>
+  <ul>
+    <li><strong>Preencher a identificação do controlador</strong> — os campos
+      marcados em vermelho na <a href="#controlador">seção 1</a>. Publicar uma
+      política de privacidade com nome, documento, endereço ou e-mail
+      inventados é pior do que não ter política nenhuma: é documento falso, e
+      o canal de contato é justamente o que a LGPD exige que funcione (art.
+      18, §1º, e art. 9º, III e IV).</li>
+    <li><strong>Revisão por advogado</strong> — o texto foi escrito por
+      desenvolvedor, não por profissional habilitado. A revisão jurídica ainda
+      não aconteceu.</li>
+  </ul>
+  <p>
+    Enquanto os campos estiverem por preencher, a página serve só para leitura
+    interna e para a conversa com o advogado.
+  </p>
+  <p><strong>Pontos em aberto para revisão (09/11/2026):</strong></p>
+  <ul>
+    <li><strong>Assinatura pela Google Play</strong> (R$ 9,90/mês ou
+      R$ 69,90/ano, decidida em 09/11). Ela torna desatualizadas as frases
+      “não possui integração com qualquer serviço externo” (seção 7), “não
+      utilizamos […] serviços de terceiros” e possivelmente “sem permissão de
+      acesso à internet” (seção 5). Falta uma seção sobre pagamento: quem trata
+      os dados da compra é a Google, e o app só recebe se a assinatura está
+      ativa. Os registros do ciclo continuam sem sair do aparelho.</li>
+    <li><strong>Quem é o controlador.</strong> A conta na Play será
+      <strong>pessoal</strong>, mas a seção 1 diz que o controlador é pessoa
+      jurídica (decisão de 05/09). Ou o controlador passa a ser a pessoa física
+      dona da conta, ou a ficha da loja e a política mostram nomes
+      diferentes.</li>
+    <li><strong>Seção 2d repete um item:</strong> “Se o aplicativo pede a sua
+      digital ao abrir” e “Se a trava por digital ao abrir o app está ligada”
+      são a mesma configuração. Está assim no texto do app, e esta página o
+      reproduz literalmente.</li>
+  </ul>
+</div>
+
+<nav class="sumario" aria-label="Sumário">
+  <p>Neste documento</p>
+  <ol>
+    <li><a href="#s1">Controlador e natureza do aplicativo</a></li>
+    <li><a href="#s2">Dados coletados</a></li>
+    <li><a href="#s3">Base legal (LGPD)</a></li>
+    <li><a href="#s4">Finalidade do tratamento</a></li>
+    <li><a href="#s5">Armazenamento, segurança e retenção</a></li>
+    <li><a href="#s6">Seus direitos (LGPD — art. 18)</a></li>
+    <li><a href="#s7">Compartilhamento e transferência</a></li>
+    <li><a href="#s8">Crianças e adolescentes</a></li>
+    <li><a href="#s9">Incidentes de segurança</a></li>
+    <li><a href="#s10">Alterações e contato</a></li>
+  </ol>
+</nav>
+
+<p class="sob-titulo">
+  <strong>Última atualização: agosto de 2026 | Versão 2.0</strong><br>
+  Conjunto de documentos legais aceito no aplicativo:
+  <code>2026.08-v6</code> — é este código, e não o número da versão do app,
+  que identifica o texto que a usuária aceitou.<br>
+  Texto extraído do FertiCheck <strong>3.5.2+32</strong> (Android).
+  <span class="preencher">[versão publicada na loja — conferir antes de publicar]</span>
+</p>
+
+<!-- ─────────────────────────────────────────────────────────
+     A partir daqui, o texto é o de LegalTexts.privacyPolicy
+     (lib/core/constants/legal_texts.dart), sem alteração de
+     teor. Os blocos com tarja lateral colorida são acréscimos
+     desta página pública e estão rotulados como tal.
+     ───────────────────────────────────────────────────────── -->
+
+<h2 id="s1" class="sem-linha">1. Controlador e natureza do aplicativo</h2>
+
+<p>
+  O FertiCheck é um caderno de registro do ciclo menstrual: ele guarda o que
+  você anota e não interpreta nada. Esta Política de Privacidade descreve o
+  tratamento dos seus dados pessoais em conformidade com a LGPD
+  (Lei nº 13.709/2018).
+</p>
+<p>
+  O controlador dos dados pessoais é o desenvolvedor identificado no perfil da
+  Play Store. Contato: consulte a seção “Sobre” nas configurações do
+  aplicativo.
+</p>
+
+<div class="acrescimo" id="controlador">
+  <span class="rotulo">A preencher antes de publicar — não faz parte do texto do aplicativo</span>
+  <p>
+    Identificação do controlador, exigida pelo art. 9º, III e IV da LGPD. Enquanto o
+    aplicativo não estiver publicado, não existe “perfil da Play Store” para
+    onde a frase acima aponta — por isso a identificação tem de vir aqui,
+    escrita por extenso:
+  </p>
+  <dl class="campos">
+    <dt>Razão social</dt>
+    <dd><span class="preencher">[RAZÃO SOCIAL — a preencher]</span></dd>
+
+    <dt>CNPJ</dt>
+    <dd><span class="preencher">[CNPJ — a preencher]</span></dd>
+
+    <dt>Endereço (sede)</dt>
+    <dd><span class="preencher">[endereço — a preencher]</span></dd>
+
+    <dt>E-mail de contato (encarregado / titular dos dados)</dt>
+    <dd><span class="preencher">[e-mail de contato — a preencher]</span></dd>
+  </dl>
+  <p>
+    O controlador é <strong>pessoa jurídica</strong> — decisão de 05/09/2026.
+    Por isso os campos pedem razão social e CNPJ, e não nome e CPF: razão
+    social, CNPJ e endereço de sede já são dado público no cadastro da Receita
+    Federal, de modo que publicá-los aqui não expõe nada que não fosse
+    consultável. Depois de preenchidos, o mesmo dado precisa aparecer no
+    aplicativo (Ajustes › “Contato do Controlador”) e no perfil da loja, para
+    os três não se contradizerem.
+  </p>
+</div>
+
+<h2 id="s2">2. Dados coletados</h2>
+
+<p>
+  Todos os dados abaixo são armazenados EXCLUSIVAMENTE no banco de dados local
+  e cifrado do seu dispositivo e NUNCA são transmitidos:
+</p>
+
+<h3>a) Dados de perfil (fornecidos por você)</h3>
+<ul>
+  <li>Data de nascimento — <b>opcional</b>. Se você não informar, nada é gravado, e o aplicativo não faz nenhuma conta com ela.</li>
+</ul>
+
+<h3>b) Dados de saúde registrados por você — DADOS SENSÍVEIS (Art. 11 LGPD)</h3>
+<ul>
+  <li>Nível de sangramento menstrual</li>
+  <li>Sensação vulvar e aparência do muco cervical</li>
+  <li>Temperatura basal corporal e horário de medição</li>
+  <li>Posição, textura e abertura do colo uterino (opcional)</li>
+  <li>Resultado de teste de LH (opcional)</li>
+  <li>Registro de relação sexual (opcional)</li>
+  <li>Notas livres (opcional)</li>
+</ul>
+
+<h3>c) Dados gerados automaticamente pelo app</h3>
+<ul>
+  <li>Data e hora dos registros</li>
+  <li>Duração média dos seus ciclos já encerrados (contagem de calendário)</li>
+</ul>
+<p>
+  O aplicativo <strong>não gera</strong> classificação de fertilidade,
+  avaliação de dias, alerta sobre padrões do ciclo nem qualquer outra leitura
+  dos seus dados.
+</p>
+
+<h3>d) Configurações que você escolhe</h3>
+<ul>
+  <li>Horário do lembrete diário, se você ligar o lembrete</li>
+  <li>Se o aplicativo pede a sua digital ao abrir</li>
+  <li>Se a trava por digital ao abrir o app está ligada</li>
+</ul>
+<p>
+  O lembrete e a trava ficam no armazenamento seguro do sistema operacional; o
+  resto, no banco cifrado. Nada disso sai do aparelho.
+</p>
+
+<h2 id="s3">3. Base legal (LGPD)</h2>
+
+<ul>
+  <li>Dados sensíveis de saúde: Consentimento explícito do titular (Art. 11, I).</li>
+  <li>Demais dados funcionais (configurações e preferências): Execução de
+    procedimentos a pedido do titular (Art. 7º, V) — são estritamente os dados
+    necessários para entregar o que você pediu ao aplicativo, e nada além
+    disso.</li>
+</ul>
+
+<h2 id="s4">4. Finalidade do tratamento</h2>
+
+<p>Os dados são utilizados EXCLUSIVAMENTE para:</p>
+<ul>
+  <li>Exibir o histórico de ciclos e registros para a própria usuária</li>
+  <li>Organizar os registros por ciclo e por dia, e contar a duração média dos ciclos já encerrados</li>
+  <li>Permitir exportação e exclusão dos dados pela usuária</li>
+</ul>
+<p>
+  O aplicativo <strong>NÃO calcula</strong> análises de fertilidade e
+  <strong>NÃO gera alertas</strong> sobre padrões do ciclo. Nenhum dado é usado
+  para produzir avaliação, classificação ou previsão de qualquer natureza.
+</p>
+<p>
+  Nenhum dado é utilizado para fins comerciais, de marketing, pesquisa ou
+  analytics.
+</p>
+
+<h2 id="s5">5. Armazenamento, segurança e retenção</h2>
+
+<ul>
+  <li>TODOS os dados ficam em um banco de dados local, dentro da área privada
+    do aplicativo no seu dispositivo.</li>
+  <li>O banco é CIFRADO, com chave exclusiva da sua instalação, guardada no
+    armazenamento seguro do sistema operacional. Nem o desenvolvedor nem outro
+    aplicativo têm acesso a ela.</li>
+  <li>O aplicativo é instalado SEM permissão de acesso à internet: o próprio
+    sistema operacional impede qualquer envio de dados.</li>
+  <li>O FertiCheck NÃO envia dados para servidores externos. O aplicativo não
+    possui servidor, conta de usuária, login nem sincronização em nuvem.</li>
+  <li>O FertiCheck NÃO tem acesso remoto aos dados armazenados.</li>
+  <li>Não utilizamos analytics, rastreamento, publicidade nem serviços de
+    terceiros. As fontes tipográficas são embutidas no aplicativo, sem download
+    em tempo de execução.</li>
+  <li>Os dados são mantidos até que você os exclua. Não há exclusão automática.
+    Desinstalar o aplicativo remove o banco e a chave.</li>
+  <li>Arquivos que você mesma exportar (JSON ou PDF do gráfico) saem dessa
+    proteção: uma vez compartilhados, ficam sujeitos ao aplicativo ou serviço
+    de destino escolhido por você.</li>
+  <li>O arquivo do gráfico em PDF fica GUARDADO na área temporária do
+    aplicativo (privada, mas fora do banco cifrado) até a exportação seguinte,
+    quando é substituído. Isso é proposital: apagá-lo assim que a tela de
+    compartilhamento fecha fazia o anexo chegar cortado ao destino. Para
+    apagá-lo quando quiser, use “Apagar exportações guardadas” em Ajustes.
+    Desinstalar o aplicativo também remove esses arquivos.</li>
+  <li>O aplicativo pelo qual você compartilhar pode manter uma cópia própria do
+    arquivo, fora do alcance do FertiCheck.</li>
+  <li>O aplicativo pode ser protegido por uma trava de digital/biometria ao
+    abrir (Ajustes &gt; “Pedir digital ao abrir o app”), que vem DESLIGADA. Quem
+    confere a biometria é o próprio sistema operacional: o FertiCheck recebe
+    apenas “autenticou” ou “não autenticou” e nunca tem acesso à sua
+    digital.</li>
+  <li>A segurança também depende das proteções do sistema operacional (senha,
+    biometria, criptografia de disco). Recomendamos manter o dispositivo
+    protegido.</li>
+</ul>
+
+<h2 id="s6">6. Seus direitos (LGPD — Art. 18)</h2>
+
+<ol class="direitos">
+  <li><span class="rom">I.</span><span>Confirmação e acesso: visualize todos os
+    seus dados no app.</span></li>
+  <li><span class="rom">II.</span><span>Correção: edite qualquer registro
+    diretamente no formulário.</span></li>
+  <li><span class="rom">III.</span><span>Portabilidade: exporte em JSON
+    (Ajustes &gt; Exportar meus dados).</span></li>
+  <li><span class="rom">IV.</span><span>Eliminação: exclua tudo (Ajustes &gt;
+    Eliminar todos os meus dados) — além dos registros do banco, o aplicativo
+    cancela o lembrete diário, apaga as preferências guardadas no armazenamento
+    seguro e varre as exportações guardadas no aparelho.</span></li>
+  <li><span class="rom">V.</span><span>Revogação do consentimento: exclua os
+    dados e desinstale o app.</span></li>
+  <li><span class="rom">VI.</span><span>Informação sobre não fornecimento: o
+    uso do app requer consentimento; sem ele, o app não pode ser utilizado (os
+    dados são o produto do app em si).</span></li>
+</ol>
+<p>
+  Como os dados ficam apenas no seu dispositivo, todos os direitos acima são
+  exercidos diretamente no aplicativo.
+</p>
+
+<div class="guia">
+  <span class="rotulo">Guia prático — não faz parte do texto do aplicativo</span>
+  <p>
+    Onde encontrar cada uma dessas ações no FertiCheck. Nada aqui cria, tira ou
+    modifica direito nenhum: é só o caminho na tela.
+  </p>
+  <ul>
+    <li><strong>Ver os seus dados (I):</strong> abas <em>Histórico</em> e
+      <em>Gráfico</em>, e a tela de registro de cada dia.</li>
+    <li><strong>Corrigir (II):</strong> aba <em>Histórico</em> › toque no ciclo
+      › toque no dia › edite e salve. Excluir um dia isolado também é feito
+      aí.</li>
+    <li><strong>Levar os dados com você (III):</strong> <em>Ajustes</em> ›
+      <em>Exportar meus dados</em> (arquivo JSON). Para a instrutora, existe
+      também a exportação do gráfico do ciclo em PDF.</li>
+    <li><strong>Apagar tudo (IV e V):</strong> <em>Ajustes</em> ›
+      <em>Eliminar todos os meus dados</em>. Exporte antes, se quiser guardar:
+      a exclusão não tem volta.</li>
+    <li><strong>Apagar só os arquivos exportados:</strong> <em>Ajustes</em> ›
+      <em>Apagar exportações guardadas</em>.</li>
+  </ul>
+  <p>
+    Se ainda assim você precisar falar com o controlador — por exemplo para
+    reclamar do tratamento dos seus dados —, use o e-mail da
+    <a href="#controlador">seção 1</a>.
+  </p>
+</div>
+
+<h2 id="s7">7. Compartilhamento e transferência</h2>
+
+<p>
+  O FertiCheck NÃO compartilha nenhum dado com terceiros e não possui
+  integração com qualquer serviço externo.
+</p>
+<p>
+  As funções de exportação — cópia/arquivo JSON e o gráfico do ciclo em PDF
+  para a instrutora — são iniciadas EXCLUSIVAMENTE pela usuária, enviam apenas
+  o que ela seleciona e usam os aplicativos do próprio dispositivo
+  (compartilhamento do sistema). A partir do envio, o destino dos dados passa a
+  depender do serviço escolhido por ela.
+</p>
+<p>
+  O gráfico em PDF NÃO inclui as suas notas livres. Ele pode incluir uma linha
+  com os dias em que houve relação sexual, mas SOMENTE se você marcar essa
+  linha no momento de exportar: ela vem desmarcada, marca apenas o dia (a folha
+  não informa se houve proteção) e nunca sai sem escolha sua.
+</p>
+
+<h2 id="s8">8. Crianças e adolescentes</h2>
+
+<p>
+  O aplicativo destina-se a pessoas maiores de 18 anos. Menores somente devem
+  usar com autorização e supervisão de responsável legal. Não coletamos
+  intencionalmente dados de menores.
+</p>
+
+<h2 id="s9">9. Incidentes de segurança</h2>
+
+<p>
+  Em caso de incidente de segurança relevante no aplicativo (vulnerabilidade no
+  código que possa afetar dados locais), o desenvolvedor se compromete a
+  notificar os usuários por meio de atualização do app e/ou aviso na Play
+  Store, conforme Art. 48 da LGPD.
+</p>
+
+<h2 id="s10">10. Alterações e contato</h2>
+
+<p>
+  Esta política pode ser atualizada. Alterações relevantes serão comunicadas
+  por atualização do aplicativo. O desenvolvedor pode ser contactado pelo
+  perfil na Play Store.
+</p>
+
+<div class="acrescimo">
+  <span class="rotulo">A preencher antes de publicar — não faz parte do texto do aplicativo</span>
+  <p>
+    Canal de contato por escrito, para quem não usa a loja:
+    <span class="preencher">[e-mail de contato — a preencher]</span>.
+    Esta página fica publicada em
+    <span class="preencher">[URL pública — a preencher]</span>, endereço que
+    precisa ser o mesmo informado no formulário da loja e no aplicativo.
+  </p>
+</div>
+
+<div class="fecho">
+  <p>
+    FertiCheck — caderno de registro do ciclo menstrual.<br>
+    <strong>NÃO é um dispositivo médico. NÃO substitui orientação
+    profissional.</strong>
+  </p>
+</div>
+
+<footer>
+  <p>
+    O texto das seções 1 a 10 é reprodução literal de
+    <code>LegalTexts.privacyPolicy</code>
+    (<code>lib/core/constants/legal_texts.dart</code>), conjunto
+    <code>2026.08-v6</code> — a mesma política que a usuária lê e aceita dentro
+    do FertiCheck. Ao alterar aquele texto, atualize esta página na mesma
+    sessão e bumpe <code>LegalTexts.documentsVersion</code>: uma página pública
+    que não bate com o que o app mostra é pior que nenhuma.
+  </p>
+  <p>
+    Página estática: não usa CDN, não carrega nada de fora e não envia dado
+    algum. As fontes ficam na pasta <code>fontes/</code>, ao lado deste arquivo.
+  </p>
+  <p>Rascunho gerado em 24/08/2026, a partir do código-fonte da branch de
+    lançamento.</p>
+  <p>
+    As fontes servidas em <code>fontes/</code> — <b>Inter</b> (© 2016 The Inter
+    Project Authors) e <b>Fraunces</b> (© 2018 The Fraunces Project Authors) —
+    estão sob a <b>SIL Open Font License 1.1</b>. O texto de cada licença
+    acompanha os arquivos: <a href="fontes/OFL-Inter.txt">OFL-Inter.txt</a> e
+    <a href="fontes/OFL-Fraunces.txt">OFL-Fraunces.txt</a>. Servir o
+    <code>.ttf</code> por HTTP é distribuição da fonte, não uso embutido, e a
+    cláusula 2 da licença exige que a cópia venha acompanhada do texto.
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
